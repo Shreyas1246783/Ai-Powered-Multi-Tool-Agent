@@ -1,0 +1,36 @@
+🚀 Overview
+      The Multi-Tool Agent is designed to understand user intent and autonomously select the right tool for the job.
+      Instead of just chatting, it can "act" by fetching real-time data or modifying external schedules.
+
+🧠 Core Intelligence
+      -AI Agent: Uses LangChain with a defined system prompt to manage logic and tool selection.
+      -Model: Powered by Google Gemini (PaLM) for advanced natural language understanding and generation.
+
+📦 Features
+      -Intelligent Intent Recognition: Automatically decides whether to answer directly or use a specific tool based on the query.
+      -Personalized Interaction: Greets users by their Telegram first and last names.
+      -Multi-Platform Connectivity: Seamlessly bridges Telegram messaging with Google Workspace and search engines.
+      -HTML Response Support: Sends formatted messages back to Telegram for better readability.
+
+⚙️ Setup & Requirements
+  1.Prerequisites
+      -An n8n instance (self-hosted or cloud).
+      -Telegram Bot: A bot token from @BotFather.
+      -Google Gemini API Key: Access via Google AI Studio.
+      -SerpAPI Key: For web search capabilities.
+      -Google Calendar OAuth2: Credentials to access and modify your calendar.
+
+   2.nstallation
+      -Copy the JSON content of the workflow.
+      -In your n8n canvas, press Ctrl + V (or Cmd + V) to paste and import the nodes.
+      -Configure the credentials for each node (Telegram, Gemini, SerpAPI, and Google Calendar).
+      -Set the Telegram Trigger and Telegram Send Message nodes to your specific bot.
+      -Activate the workflow.
+
+
+📝 Example Interactions
+     Search: "Who won the game last night?" (Agent uses SerpAPI)
+     Math: "What is the difference in days between today and Christmas?" (Agent uses Calculator)
+     Schedule: "Add 'Dentist Appointment' to my calendar for next Monday at 10 AM." (Agent uses Google Calendar Tool)
+
+
